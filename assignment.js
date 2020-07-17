@@ -61,6 +61,10 @@ var floor=25;
 /**code for tinyFriend function */
 
 function tinyFriend(friendsName){
+    if(friendsName.length==0){
+        console.log("this array has no element");
+    }
+    else{
     var sizeOfName = friendsName[0].length;
     var indexNo=0;
     for(var i=0;i<friendsName.length;i++){
@@ -69,17 +73,15 @@ function tinyFriend(friendsName){
             indexNo=i;
         }
     }
-    return friendsName[indexNo];
+    console.log(friendsName[indexNo]);
+    }
 }
 
 var friendsList=["tasnim","jawad","kawser","mostakim","hemel"];
-    if(friendsList.length==0){
-        console.log("this array has no element");
-    }
-    else{
-        var tinyOne=tinyFriend(friendsList);
-        console.log(tinyOne);
-    }
+   
+var tinyOne=tinyFriend(friendsList);
+        
+    
 
 
     
